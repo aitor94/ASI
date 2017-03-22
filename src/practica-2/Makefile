@@ -2,7 +2,7 @@ PRACT=practica-2
 
 BINS= client
 
-GCC=gcc
+GCC=cc
 
 CFLAGS=
 #EXTRAFLAGS= -D TRACE

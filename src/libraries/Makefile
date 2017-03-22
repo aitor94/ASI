@@ -1,4 +1,4 @@
-GCC=gcc
+GCC=cc
 
 BIN=test_lib
 

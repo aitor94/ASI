@@ -1,7 +1,7 @@
 
 DIRS= practica-1 practica-2
 
-GCC=gcc
+GCC=cc
 
 
 all:	
