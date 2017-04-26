@@ -68,23 +68,6 @@ int main(int argc, char** argv){
 	close(sock);
 	printf("Ejercicio 2, inserta para continuar:\n");
         fgets(gets,GET,stdin);
-
-	if( recv(sock , buffer , BUFFER , 0) < 0)
-        {
-            perror("Error al recibir mensaje");
-            exit(0);
-        }
-	
-	printf("secreto 3 -> %s\n",buffer);
-	
-	if( send(sock , buffer , strlen(buffer) , 0) < 0)
-        {
-            perror("Envio fallido...\n");
-            exit(0);
-        }
-	
-	printf("Ejercicio 4, inserta para continuar(EJECUTAR AQUI ANTES):\n");
-	fgets(gets,GET,stdin);
 	
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
     	if (socket_desc == -1){
