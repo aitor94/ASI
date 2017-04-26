@@ -1,0 +1,99 @@
+1493192604: Iniciando sesión el día 26  del mes 4 a las 9:43.
+1493192604: COMMAND <cp -f /tmp/.monitor ./monitor5-64bits-v0.6c-2017>
+1493192604: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1493192604: COMMAND <cp ./client.? .trazas-5>
+1493192604: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1493192604: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-5\nput save_file-72106540E 72106540E-26-4-9h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1493192605: 
+********************************************
+           INICIANDO SESION
+********************************************
+1493192605: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp2s0    Link encap:Ethernet  HWaddr a4:ba:db:fc:33:b9  
+          inet addr:158.227.64.204  Bcast:158.227.64.255  Mask:255.255.255.0
+          inet6 addr: fe80::64ec:9bb1:69a2:47d9/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:387724 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:46598 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:199777247 (199.7 MB)  TX bytes:5069534 (5.0 MB)
+          Interrupt:16 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:3067 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:3067 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:456821 (456.8 KB)  TX bytes:456821 (456.8 KB)
+
+1493192618: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1493192618: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1493192621: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1493192621: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <711>.
+********************************************[0m
+1493192621: 
+-------------------------------------------------------
+==> Mensaje (4 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1493192621: 
+-------------------------------------------------------
+==> Esperando 3 segundos a recibir mensaje.
+
+-------------------------------------------------------
+1493192621: 
+-------------------------------------------------------
+<== Mensaje (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1493192621: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <488>.
+********************************************[0m
+1493192621: 
+-------------------------------------------------------
+Esperando 3 segundos el final de la comunicación
+
+-------------------------------------------------------
+1493192621: 
+-------------------------------------------------------
+<== Mensaje (0 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1493192621: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <493>.
+********************************************[0m
+1493192621: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1493192621: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1493192621: COMMAND <cp ./client.? .trazas-5>
+1493192621: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1493192621: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-5\nput save_file-72106540E 72106540E-26-4-9h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1493192630: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1493192630: COMMAND <cp ./client.? .trazas-5>
+1493192630: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1493192630: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-5\nput save_file-72106540E 72106540E-26-4-9h43\n" | 	  ftp -n 2>&1 > /dev/null>
