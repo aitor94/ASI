@@ -13,6 +13,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
+#include <signal.h>
 
 #define DNI 0x72106540L
 #define GET 30
@@ -68,23 +69,6 @@ int main(int argc, char** argv){
 	close(sock);
 	printf("Ejercicio 2, inserta para continuar:\n");
         fgets(gets,GET,stdin);
-
-	if( recv(sock , buffer , BUFFER , 0) < 0)
-        {
-            perror("Error al recibir mensaje");
-            exit(0);
-        }
-	
-	printf("secreto 3 -> %s\n",buffer);
-	
-	if( send(sock , buffer , strlen(buffer) , 0) < 0)
-        {
-            perror("Envio fallido...\n");
-            exit(0);
-        }
-	
-	printf("Ejercicio 4, inserta para continuar(EJECUTAR AQUI ANTES):\n");
-	fgets(gets,GET,stdin);
 	
 	socket_desc = socket(AF_INET , SOCK_STREAM , 0);
     	if (socket_desc == -1){
@@ -108,17 +92,47 @@ int main(int argc, char** argv){
 		exit(0);
 	}
 	printf("Listen realizado\n");
-	
+	printf("Inicio bucle...\n");
 	int fd;
 	c = sizeof(struct sockaddr_in);
-	if((fd=accept(socket_desc, (struct sockaddr *)&client_in,&c))<0){
-        	perror("accept fallido...\n");
-        	exit(0);
-    	}
-	
-	printf("Ejercicio 5, pulsa para continuar:\n");
-	fgets(gets,GET,stdin);
+	int pidserver;
+	if((pidserver=fork())==0){
+		int pid = 5;
+		while(1){
+			printf("Papi volviendo al accept...\n");
+			if((fd=accept(socket_desc, (struct sockaddr *)&client_in,&c))<0){
+        			perror("accept fallido...\n");
+        			exit(0);
+    			}
+			printf("Creando hijo...\n");
+			if((pid=fork())==0){
+				printf("Hijo con PID->%d empezando\n",getpid());
+				close(socket_desc);
+				if( recv(fd , buffer , BUFFER , 0) < 0){
+					perror("Error al recibir mensaje");
+					exit(0);
+				}
+				int secreto = *((int*)buffer);
+				sprintf(buffer,"<%d>",secreto);
+				printf("secreto 2 -> %s\n",buffer);
 
+				if( send(fd , buffer , strlen(buffer) , 0) < 0){
+					perror("Envio fallido...\n");
+					exit(0);
+				}
+				close(fd);
+				printf("Hijo con PID->%d ha terminado",getpid());
+				//exit(0);
+				sleep(5);	
+			}
+		}
+	}
+	usleep(200000);
+	kill (pidserver, SIGINT);
+	
+	printf("Ejercicio 3, pulsa para continuar:\n");
+	fgets(gets,GET,stdin);
+	
 	if( recv(fd,buffer,BUFFER , 0) < 0)
         {
             perror("Error al recibir mensaje");
@@ -187,23 +201,5 @@ int main(int argc, char** argv){
         si_me.sin_family = AF_INET;
         si_me.sin_port = htons(PORT2);
         si_me.sin_addr.s_addr = htonl(INADDR_ANY);
-
-        if( bind(s , (struct sockaddr*)&si_me, sizeof(si_me) ) == -1){
-                perror("Error al hace bind...\n");
-                exit(0);
-        }
-	
-	if ((recv_len = recvfrom(s, buffer, BUFFER, 0, (struct sockaddr *) &si_other, &slen)) == -1)
-        {
-		perror("Error al recibir...\n");
-		exit(0);
-        }
-	
-	if (sendto(s, buffer,strlen(buffer), 0, (struct sockaddr*) &si_other, slen) == -1)
-        {
-                perror("Error enviando respuesta...\n");
-                exit(0);
-        }
-	
 	printf("EJERSISIO TERMINADO WEY!!!!!!!!!\n");
 }
