@@ -168,23 +168,56 @@ int main(int argc, char** argv){
                 perror("Error enviando <?>...\n");
                 exit(0);
         }
-	printf("Enviado");
+	printf("Enviado\n");
 	if (recvfrom(s,buffer,BUFFER,0,(struct sockaddr *) &si_other, &slen)<0){
 		perror("Error recibiendo...\n");
 		exit(0);
 	}
-	printf("%s",buffer);
+	printf("%s\n",buffer);
 	int sec8;
-	(int *)buffer = sec8;
+	sscanf(buffer,"<%d>",&sec8);
+	*((int *) buffer) = sec8;
 
-	if (sendto(s,buffer,sizeof(int), 0,(struct sockaddr *) &si_other, slen) == -1)
+	if (sendto(s,buffer,BUFFER, 0,(struct sockaddr *) &si_other, slen) == -1)
         {
                 perror("Error enviando secreto...\n");
                 exit(0);
         }
 	
-	printf("Ejercicio 4, pulsa para continuar:\n");
+	printf("Ejercicio 4, pulsa para continuar(Ejecutar antes aqui):\n");
 	fgets(gets,GET,stdin);
+	
+	if((s=socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP))==-1){
+		printf("Error socket UDP\n");
+		exit(0);
+	}
+	si_me.sin_family = AF_INET;
+	si_me.sin_port = htons(PORT2);
+	si_me.sin_addr.s_addr = htonl(INADDR_ANY);
+	
+	if( bind(s , (struct sockaddr*)&si_me, sizeof(si_me) ) == -1){
+		                perror("Error al hace bind...\n");
+				                exit(0);
+	}
+	
+	while(1){
+		if ((recv_len = recvfrom(s, buffer, BUFFER, 0, (struct sockaddr *) &si_other, &slen)) == -1)
+	        {
+			perror("Error al recibir...\n");
+			exit(0);
+		}
+		sec8 = *((int *) buffer);
+		sprintf(buffer,"<%d>",sec8);
+		printf("Recibido:");
+		printf("%s\n",buffer);
+		if (sendto(s, buffer,strlen(buffer), 0, (struct sockaddr*) &si_other, slen) == -1)
+		{
+			perror("Error enviando respuesta...\n");
+			exit(0);
+		}
+	}
+
+	printf("FIN!!!!!!!!!\n");
 
 //**************************************************************************************
 //***************************************************************************************
