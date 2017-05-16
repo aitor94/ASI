@@ -1,0 +1,40 @@
+1494928274: Iniciando sesión el día 16  del mes 5 a las 11:51.
+1494928274: COMMAND <cp -f /tmp/.monitor ./examen-2-64bits-2016-17>
+1494928274: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494928274: COMMAND <cp ./client.? .trazas-2>
+1494928274: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494928274: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-11h51\n" | 	  ftp -n 2>&1 > /dev/null>
+1494928275: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494928275: COMMAND <ifconfig >> .trazas-2/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 2280  bytes 1153546 (1.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1847  bytes 519669 (519.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 338  bytes 24912 (24.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 338  bytes 24912 (24.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494928287: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494928287: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
