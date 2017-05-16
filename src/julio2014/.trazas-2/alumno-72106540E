@@ -38,3 +38,1172 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 
 1494928287: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494931414: Iniciando sesión el día 16  del mes 5 a las 12:43.
+1494931414: COMMAND <cp -f /tmp/.monitor ./examen-2-64bits-2016-17>
+1494931414: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494931414: COMMAND <cp ./client.? .trazas-2>
+1494931414: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494931414: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494931415: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494931415: COMMAND <ifconfig >> .trazas-2/alumno-72106540E>
+eno1      Link encap:Ethernet  HWaddr b8:ca:3a:92:ee:42  
+          inet addr:158.227.56.152  Bcast:158.227.56.255  Mask:255.255.255.0
+          inet6 addr: fe80::82f3:1d7a:bb0d:4b9e/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:81438 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:5667 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:19019411 (19.0 MB)  TX bytes:791602 (791.6 KB)
+          Interrupt:20 Memory:f7100000-f7120000 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:885 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:885 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:130186 (130.1 KB)  TX bytes:130186 (130.1 KB)
+
+1494931424: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494931424: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494931424: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494931428: :ok> Operación bien realizada
+
+1494931428: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494931428: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494931428: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1516 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   599  0.0  0.0   4356   684 pts/2    S+   12:43   0:00 ./client 578
+docencia   600  0.0  0.0   4508   696 pts/18   S+   12:43   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   601  0.0  0.0  38584  3420 pts/18   R+   12:43   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931428: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931430: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1516 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   599  0.0  0.0   4356   684 pts/2    S+   12:43   0:00 ./client 578
+docencia   606  0.0  0.0   4356    88 pts/2    S+   12:43   0:00 ./client 578
+docencia   607  0.0  0.0   4356    88 pts/2    S+   12:43   0:00 ./client 578
+docencia   608  0.0  0.0   4508   800 pts/18   S+   12:43   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   609  0.0  0.0  38584  3520 pts/18   R+   12:43   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931430: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931430: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1494931430: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <44>.
+********************************************[0m
+1494931430: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494931440: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494931440: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <2> .
+
+*************************************************[0m
+1494931440: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494931657: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494931657: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494931657: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494931660: :ok> Operación bien realizada
+
+1494931660: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494931660: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494931660: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1516 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   606  0.0  0.0   4356    88 pts/2    S    12:43   0:00 ./client 578
+docencia   607  0.0  0.0   4356    88 pts/2    S    12:43   0:00 ./client 578
+docencia   622  0.0  0.0   4356   684 pts/2    S+   12:47   0:00 ./client 578
+docencia   625  0.0  0.0   4356    92 pts/2    S+   12:47   0:00 ./client 578
+docencia   626  0.0  0.0   4356    92 pts/2    S+   12:47   0:00 ./client 578
+docencia   627  0.0  0.0   4508   716 pts/18   S+   12:47   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   628  0.0  0.0  38584  3464 pts/18   R+   12:47   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931660: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931660: 
+Número de procesos cliente (5) inadecuado 
+1494931662: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   606  0.0  0.0   4356    88 pts/2    S    12:43   0:00 ./client 578
+docencia   607  0.0  0.0   4356    88 pts/2    S    12:43   0:00 ./client 578
+docencia   622  0.0  0.0   4356   684 pts/2    S+   12:47   0:00 ./client 578
+docencia   625  0.0  0.0   4356    92 pts/2    S+   12:47   0:00 ./client 578
+docencia   626  0.0  0.0   4356    92 pts/2    S+   12:47   0:00 ./client 578
+docencia   633  0.0  0.0   4508   756 pts/18   S+   12:47   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   634  0.0  0.0  38584  3464 pts/18   R+   12:47   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931662: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931662: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1494931662: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <1> .
+
+*************************************************[0m
+1494931662: 
+Número de procesos cliente (5) inadecuado 
+1494931662: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494931865: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494931865: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494931865: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494931867: :ok> Operación bien realizada
+
+1494931867: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494931867: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494931867: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   659  0.0  0.0   4356   656 pts/2    S+   12:51   0:00 ./client 578
+docencia   662  0.0  0.0   4356    88 pts/2    S+   12:51   0:00 ./client 578
+docencia   663  0.0  0.0   4356    88 pts/2    S+   12:51   0:00 ./client 578
+docencia   664  0.0  0.0   4508   848 pts/18   S+   12:51   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   665  0.0  0.0  38584  3452 pts/18   R+   12:51   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931867: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931867: 
+Número de procesos cliente (3) inadecuado 
+1494931869: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494931879: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494931879: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <2> .
+
+*************************************************[0m
+1494931879: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494931944: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494931944: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494931944: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494931946: :ok> Operación bien realizada
+
+1494931946: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494931946: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494931946: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   676  0.0  0.0   4356   652 pts/2    S+   12:52   0:00 ./client 578
+docencia   679  0.0  0.0   4356    92 pts/2    S+   12:52   0:00 ./client 578
+docencia   680  0.0  0.0   4356    92 pts/2    S+   12:52   0:00 ./client 578
+docencia   681  0.0  0.0   4508   808 pts/18   S+   12:52   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   682  0.0  0.0  38584  3440 pts/18   R+   12:52   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494931946: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494931946: 
+Número de procesos cliente (3) inadecuado 
+1494931948: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494931958: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494931958: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <2> .
+
+*************************************************[0m
+1494931958: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494932116: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494932116: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494932116: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494932119: :ok> Operación bien realizada
+
+1494932119: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494932119: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494932119: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   693  0.0  0.0   4356   660 pts/2    S+   12:55   0:00 ./client 578
+docencia   697  0.0  0.0   4356    88 pts/2    S+   12:55   0:00 ./client 578
+docencia   698  0.0  0.0   4356    88 pts/2    S+   12:55   0:00 ./client 578
+docencia   699  0.0  0.0   4508   716 pts/18   S+   12:55   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   700  0.0  0.0  38584  3484 pts/18   R+   12:55   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494932119: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494932119: 
+Número de procesos cliente (3) inadecuado 
+1494932121: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494932121: RECIBIDO MENSAJE: "H693".
+1494932121: 
+[5m-------------------------------------------------------
+Mal formato de mensaje. Se esperaba "H<999>".
+-------------------------------------------------------[0m
+1494932121: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <2> .
+
+*************************************************[0m
+1494932121: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494932173: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494932173: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494932173: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494932175: :ok> Operación bien realizada
+
+1494932175: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494932176: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494932176: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   712  0.0  0.0   4356   728 pts/2    S+   12:56   0:00 ./client 578
+docencia   715  0.0  0.0   4356    92 pts/2    S+   12:56   0:00 ./client 578
+docencia   716  0.0  0.0   4356    92 pts/2    S+   12:56   0:00 ./client 578
+docencia   717  0.0  0.0   4508   756 pts/18   S+   12:56   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   718  0.0  0.0  38584  3476 pts/18   R+   12:56   0:00 ps u
+docencia 32150  0.0  0.0  24820  6476 pts/2    Ss   12:09   0:00 bash
+1494932176: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494932176: 
+Número de procesos cliente (3) inadecuado 
+1494932178: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494932178: RECIBIDO MENSAJE: "H<712>".
+1494932178: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 712
+-------------------------------------------------------
+1494932178: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494932178: RECIBIDO MENSAJE: "H<716>".
+1494932178: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 716
+-------------------------------------------------------
+1494932178: RECIBIDO MENSAJE: "H<715>".
+1494932178: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 715
+-------------------------------------------------------
+1494932178: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494932178: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494932178: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494932178: COMMAND <cp ./client.? .trazas-2>
+1494932178: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494932178: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494933023: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494933023: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933023: 
+------------------------------------------------------------------
+Número de procesos cliente erróneo (1). Deben estar activos tres procesos.
+------------------------------------------------------------------
+1494933023: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494933058: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494933058: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494933058: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494933062: :ok> Operación bien realizada
+
+1494933062: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494933062: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494933062: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   773  0.0  0.0   4360   656 pts/2    S+   13:10   0:00 ./client 578
+docencia   781  0.0  0.0   4360    88 pts/2    S+   13:11   0:00 ./client 578
+docencia   782  0.0  0.0   4360    88 pts/2    S+   13:11   0:00 ./client 578
+docencia   783  0.0  0.0   4508   748 pts/18   S+   13:11   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   784  0.0  0.0  38584  3528 pts/18   R+   13:11   0:00 ps u
+docencia 32150  0.0  0.0  24840  6496 pts/2    Ss   12:09   0:00 bash
+1494933062: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933062: 
+Número de procesos cliente (3) inadecuado 
+1494933064: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494933064: RECIBIDO MENSAJE: "H<773>".
+1494933064: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 773
+-------------------------------------------------------
+1494933064: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494933064: RECIBIDO MENSAJE: "H<782>".
+1494933064: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 782
+-------------------------------------------------------
+1494933064: RECIBIDO MENSAJE: "H<781>".
+1494933064: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 781
+-------------------------------------------------------
+1494933064: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494933064: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494933064: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494933064: COMMAND <cp ./client.? .trazas-2>
+1494933064: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494933064: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494933084: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494933084: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933084: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494933084: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494933094: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494933094: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494933094: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494933757: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494933757: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494933757: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494933760: :ok> Operación bien realizada
+
+1494933760: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494933760: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494933760: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   830  0.0  0.0   4360   796 pts/2    S+   13:22   0:00 ./client 578
+docencia   833  0.0  0.0   4360    88 pts/2    S+   13:22   0:00 ./client 578
+docencia   834  0.0  0.0   4360    88 pts/2    S+   13:22   0:00 ./client 578
+docencia   835  0.0  0.0   4508   848 pts/18   S+   13:22   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   836  0.0  0.0  38584  3456 pts/18   R+   13:22   0:00 ps u
+docencia 32150  0.0  0.0  24840  6496 pts/2    Ss   12:09   0:00 bash
+1494933760: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933760: 
+Número de procesos cliente (3) inadecuado 
+1494933762: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494933762: RECIBIDO MENSAJE: "H<830>".
+1494933762: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 830
+-------------------------------------------------------
+1494933762: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494933762: RECIBIDO MENSAJE: "H<834>".
+1494933762: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 834
+-------------------------------------------------------
+1494933762: RECIBIDO MENSAJE: "H<833>".
+1494933762: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 833
+-------------------------------------------------------
+1494933762: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494933762: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494933762: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494933762: COMMAND <cp ./client.? .trazas-2>
+1494933762: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494933762: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494933770: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494933770: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933770: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494933770: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494933770: RECIBIDO MENSAJE: "e7".
+1494933770: 
+[5m-------------------------------------------------------
+Mal formato de mensaje. Se esperaba "e<9999><888>".
+-------------------------------------------------------[0m
+1494933770: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494933770: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494933909: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494933909: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494933909: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494933912: :ok> Operación bien realizada
+
+1494933912: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494933912: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494933912: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   858  0.0  0.0  23816  5404 pts/19   Ss+  13:23   0:00 bash
+docencia   881  0.0  0.0   4360   740 pts/2    S+   13:25   0:00 ./client 578
+docencia   891  0.0  0.0   4360    92 pts/2    S+   13:25   0:00 ./client 578
+docencia   892  0.0  0.0   4360    92 pts/2    S+   13:25   0:00 ./client 578
+docencia   893  0.0  0.0   4508   704 pts/18   S+   13:25   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   894  0.0  0.0  38584  3476 pts/18   R+   13:25   0:00 ps u
+docencia 32150  0.0  0.0  24840  6496 pts/2    Ss   12:09   0:00 bash
+1494933913: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933913: 
+Número de procesos cliente (3) inadecuado 
+1494933915: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494933915: RECIBIDO MENSAJE: "H<881>".
+1494933915: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 881
+-------------------------------------------------------
+1494933915: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494933915: RECIBIDO MENSAJE: "H<892>".
+1494933915: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 892
+-------------------------------------------------------
+1494933915: RECIBIDO MENSAJE: "H<891>".
+1494933915: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 891
+-------------------------------------------------------
+1494933915: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494933915: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494933915: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494933915: COMMAND <cp ./client.? .trazas-2>
+1494933915: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494933915: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494933921: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494933921: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494933921: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494933921: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494933921: RECIBIDO MENSAJE: "e<891><823>".
+1494933921: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <823>.
+********************************************[0m
+1494933921: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494933921: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494933921: RECIBIDO MENSAJE: "e<881><16>".
+1494933921: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <368>.
+********************************************[0m
+1494933921: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494933921: RECIBIDO MENSAJE: "e<892><357>".
+1494933921: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <581>.
+********************************************[0m
+1494933921: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494933921: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494933921: COMMAND <cp ./client.? .trazas-2>
+1494933921: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494933921: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494935008: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494935008: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494935008: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494935010: :ok> Operación bien realizada
+
+1494935010: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494935010: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494935010: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   858  0.0  0.0  23816  5404 pts/19   Ss+  13:23   0:00 bash
+docencia   967  0.0  0.0   4364   796 pts/2    S+   13:43   0:00 ./client 578
+docencia   971  0.0  0.0   4368    88 pts/2    S+   13:43   0:00 ./client 578
+docencia   972  0.0  0.0   4368    88 pts/2    S+   13:43   0:00 ./client 578
+docencia   973  0.0  0.0   4508   712 pts/18   S+   13:43   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia   975  0.0  0.0  38584  3480 pts/18   R+   13:43   0:00 ps u
+docencia 32150  0.0  0.0  24840  6496 pts/2    Ss   12:09   0:00 bash
+1494935010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935010: 
+Número de procesos cliente (3) inadecuado 
+1494935012: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494935012: RECIBIDO MENSAJE: "H<967>".
+1494935012: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 967
+-------------------------------------------------------
+1494935012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494935012: RECIBIDO MENSAJE: "H<972>".
+1494935012: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 972
+-------------------------------------------------------
+1494935012: RECIBIDO MENSAJE: "H<971>".
+1494935012: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 971
+-------------------------------------------------------
+1494935012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494935012: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494935012: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494935012: COMMAND <cp ./client.? .trazas-2>
+1494935012: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494935012: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494935017: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494935017: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935017: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935017: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935017: RECIBIDO MENSAJE: "e<971><823>".
+1494935017: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <823>.
+********************************************[0m
+1494935017: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935017: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935017: RECIBIDO MENSAJE: "e<967><510>".
+1494935017: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <368>.
+********************************************[0m
+1494935017: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935017: RECIBIDO MENSAJE: "e<972><195>".
+1494935017: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <581>.
+********************************************[0m
+1494935017: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494935017: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494935017: COMMAND <cp ./client.? .trazas-2>
+1494935017: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494935017: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494935022: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494935022: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935022: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494935022: :ok> Operación bien realizada
+
+1494935022: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494935022: :ok> Operación bien realizada
+
+1494935022: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <230>.
+********************************************[0m
+1494935022: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <9> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935022: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935032: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494935032: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 3.
+
+*************************************************[0m
+1494935142: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494935142: COMMAND <ipcrm -Q 0x72106540 >> .trazas-2/alumno-72106540E>
+1494935142: 
+-------------------------------------------------------
+Esperando que el cliente cree la cola de mensajes <0x72106540L> en 10 segundos
+-------------------------------------------------------
+1494935144: :ok> Operación bien realizada
+
+1494935144: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (578).
+
+-------------------------------------------------------
+1494935144: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494935144: COMMAND <ps u >> .trazas-2/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+docencia   429  0.0  0.0  23816  5336 pts/18   Ss   12:12   0:00 bash
+docencia   578  0.0  0.0   4416  1580 pts/18   S+   12:43   0:00 ./examen-2-64bits-2016-17
+docencia   858  0.0  0.0  23816  5404 pts/19   Ss+  13:23   0:00 bash
+docencia  1035  0.0  0.0   4364   732 pts/2    S+   13:45   0:00 ./client 578
+docencia  1050  0.0  0.0   4368    92 pts/2    S+   13:45   0:00 ./client 578
+docencia  1051  0.0  0.0   4368    92 pts/2    S+   13:45   0:00 ./client 578
+docencia  1052  0.0  0.0   4508   756 pts/18   S+   13:45   0:00 sh -c ps u >> .trazas-2/alumno-72106540E
+docencia  1053  0.0  0.0  38584  3508 pts/18   R+   13:45   0:00 ps u
+docencia 32150  0.0  0.0  24840  6496 pts/2    Ss   12:09   0:00 bash
+1494935144: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935144: 
+Número de procesos cliente (3) inadecuado 
+1494935146: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494935146: RECIBIDO MENSAJE: "H<1035>".
+1494935146: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 1035
+-------------------------------------------------------
+1494935146: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <233>.
+********************************************[0m
+1494935146: RECIBIDO MENSAJE: "H<1051>".
+1494935146: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 1051
+-------------------------------------------------------
+1494935146: RECIBIDO MENSAJE: "H<1050>".
+1494935146: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 1050
+-------------------------------------------------------
+1494935146: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <722>.
+********************************************[0m
+1494935146: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494935146: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494935146: COMMAND <cp ./client.? .trazas-2>
+1494935146: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494935146: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494935149: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494935149: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935149: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935149: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935149: RECIBIDO MENSAJE: "e<1050><823>".
+1494935149: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <823>.
+********************************************[0m
+1494935149: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935149: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935149: RECIBIDO MENSAJE: "e<1035><465>".
+1494935149: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <368>.
+********************************************[0m
+1494935149: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935149: RECIBIDO MENSAJE: "e<1051><226>".
+1494935149: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <581>.
+********************************************[0m
+1494935149: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494935149: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494935149: COMMAND <cp ./client.? .trazas-2>
+1494935149: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494935149: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
+1494935151: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494935151: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-2/.n_cliente>
+1494935151: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494935151: :ok> Operación bien realizada
+
+1494935151: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494935151: :ok> Operación bien realizada
+
+1494935151: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <230>.
+********************************************[0m
+1494935151: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <9> a través de la cola de mensajes <0x72106540>
+------------------------------------------------------------------
+1494935151: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494935161: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494935161: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 3.
+
+*************************************************[0m
+1494935169: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-2" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494935169: COMMAND <cp ./client.? .trazas-2>
+1494935169: COMMAND <tar zcf save_file-72106540E .trazas-2 > /dev/null>
+1494935169: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-2\nput save_file-72106540E 72106540E-16-5-12h43\n" | 	  ftp -n 2>&1 > /dev/null>
