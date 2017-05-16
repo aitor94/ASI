@@ -1,0 +1,3462 @@
+1494764253: Iniciando sesión el día 14  del mes 5 a las 14:17.
+1494764253: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494764253: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494764253: COMMAND <cp ./client.? .trazas-5>
+1494764253: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494764253: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-14h17\n" | 	  ftp -n 2>&1 > /dev/null>
+1494764263: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494764312: Iniciando sesión el día 14  del mes 5 a las 14:18.
+1494764312: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494764312: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494764312: COMMAND <cp ./client.? .trazas-5>
+1494764312: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494764312: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-14h18\n" | 	  ftp -n 2>&1 > /dev/null>
+1494764322: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494764322: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 25175  bytes 21392651 (21.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16764  bytes 1957497 (1.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1934  bytes 116623 (116.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1934  bytes 116623 (116.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494764337: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494764337: COMMAND <ipcs -m >> .trazas-5/alumno-72106540E 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0xec010b39 0          aitor      600        3208       2                       
+0x00000000 2097153    aitor      600        20480      2          dest         
+0x00000000 458754     aitor      600        40960      2          dest         
+0x72106540 393219     aitor      666        1024       0                       
+0x00000000 131076     aitor      600        3796992    2          dest         
+0x00000000 425989     aitor      600        3796992    2          dest         
+0x00000000 491526     aitor      600        40960      2          dest         
+0x00000000 524295     aitor      600        282624     2          dest         
+0x00000000 557064     aitor      600        282624     2          dest         
+0x00000000 2752521    aitor      600        86016      2          dest         
+0x00000000 917514     aitor      600        1540096    2          dest         
+0x00000000 688139     aitor      600        323584     2          dest         
+0x00000000 1835020    aitor      600        12288      2          dest         
+0x00000000 884749     aitor      600        1597440    2          dest         
+0x00000000 983054     aitor      600        88060      2          dest         
+0x00000000 2686991    aitor      600        8192       2          dest         
+0x00000000 1540112    aitor      600        36864      2          dest         
+0x00000000 2654225    aitor      600        1648536    2          dest         
+0x00000000 1769490    aitor      600        86016      2          dest         
+0x00000000 1802259    aitor      600        12288      2          dest         
+0x00000000 2719764    aitor      600        323584     2          dest         
+0x00000000 2883605    aitor      600        20480      2          dest         
+
+1494764337: 
+-------------------------------------------------------
+Existe YA un segmento de memoria compartida con clave 0x72106540
+-------------------------------------------------------
+1494764337: 
+-----------------------------------------------
+PROBLEMAS EN LA CREACION DE SEMAFORO CON CLAVE <0x72106540>.
+-----------------------------------------------
+1494764337: Problemas en la inicialización de dispositivos1494764337: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494767144: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494767144: 
+-----------------------------------------------
+PROBLEMAS EN LA CREACION DE SEMAFORO CON CLAVE <0x72106540>.
+-----------------------------------------------
+1494767144: Problemas en la inicialización de dispositivos1494767144: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494767148: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494767148: 
+-----------------------------------------------
+PROBLEMAS EN LA CREACION DE SEMAFORO CON CLAVE <0x72106540>.
+-----------------------------------------------
+1494767148: Problemas en la inicialización de dispositivos1494767148: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494767164: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494767164: COMMAND <cp ./client.? .trazas-5>
+1494767164: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494767164: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-14h18\n" | 	  ftp -n 2>&1 > /dev/null>
+1494767191: Iniciando sesión el día 14  del mes 5 a las 15:06.
+1494767191: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494767191: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494767191: COMMAND <cp ./client.? .trazas-5>
+1494767191: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494767191: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h06\n" | 	  ftp -n 2>&1 > /dev/null>
+1494767201: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494767201: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 26757  bytes 22340213 (22.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 18023  bytes 2097382 (2.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1934  bytes 116623 (116.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1934  bytes 116623 (116.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494767203: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494767203: COMMAND <ipcs -m >> .trazas-5/alumno-72106540E 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0xec010b39 0          aitor      600        3208       2                       
+0x00000000 2097153    aitor      600        20480      2          dest         
+0x00000000 458754     aitor      600        40960      2          dest         
+0x00000000 131076     aitor      600        3796992    2          dest         
+0x00000000 425989     aitor      600        3796992    2          dest         
+0x00000000 491526     aitor      600        40960      2          dest         
+0x00000000 524295     aitor      600        282624     2          dest         
+0x00000000 557064     aitor      600        282624     2          dest         
+0x00000000 2752521    aitor      600        86016      2          dest         
+0x00000000 917514     aitor      600        1540096    2          dest         
+0x00000000 688139     aitor      600        323584     2          dest         
+0x00000000 1835020    aitor      600        12288      2          dest         
+0x00000000 884749     aitor      600        1597440    2          dest         
+0x00000000 983054     aitor      600        88060      2          dest         
+0x00000000 2686991    aitor      600        8192       2          dest         
+0x00000000 1540112    aitor      600        36864      2          dest         
+0x00000000 2654225    aitor      600        1648536    2          dest         
+0x00000000 1769490    aitor      600        86016      2          dest         
+0x00000000 1802259    aitor      600        12288      2          dest         
+0x00000000 2719764    aitor      600        323584     2          dest         
+0x00000000 2883605    aitor      600        20480      2          dest         
+
+1494767203: 
+-----------------------------------------------
+PROBLEMAS EN LA CREACION DE SEMAFORO CON CLAVE <0x72106540>.
+-----------------------------------------------
+1494767203: Problemas en la inicialización de dispositivos1494767203: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494767514: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494767514: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494767529: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494767529: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494768027: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494768027: COMMAND <cp ./client.? .trazas-5>
+1494768027: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494768027: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h06\n" | 	  ftp -n 2>&1 > /dev/null>
+1494768040: Iniciando sesión el día 14  del mes 5 a las 15:20.
+1494768040: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494768040: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494768040: COMMAND <cp ./client.? .trazas-5>
+1494768040: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494768040: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h20\n" | 	  ftp -n 2>&1 > /dev/null>
+1494768050: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494768050: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 29125  bytes 23423099 (23.4 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 20073  bytes 2363563 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 1934  bytes 116623 (116.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1934  bytes 116623 (116.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494768066: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494768066: COMMAND <ipcs -m >> .trazas-5/alumno-72106540E 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0xec010b39 0          aitor      600        3208       2                       
+0x00000000 2097153    aitor      600        20480      2          dest         
+0x00000000 458754     aitor      600        40960      2          dest         
+0x00000000 131076     aitor      600        3796992    2          dest         
+0x00000000 425989     aitor      600        3796992    2          dest         
+0x00000000 491526     aitor      600        40960      2          dest         
+0x00000000 524295     aitor      600        282624     2          dest         
+0x00000000 557064     aitor      600        282624     2          dest         
+0x00000000 2752521    aitor      600        86016      2          dest         
+0x00000000 917514     aitor      600        1540096    2          dest         
+0x00000000 688139     aitor      600        323584     2          dest         
+0x00000000 1835020    aitor      600        12288      2          dest         
+0x00000000 884749     aitor      600        1597440    2          dest         
+0x00000000 983054     aitor      600        88060      2          dest         
+0x00000000 1540112    aitor      600        36864      2          dest         
+0x00000000 2654225    aitor      600        1648536    2          dest         
+0x00000000 1769490    aitor      600        86016      2          dest         
+0x00000000 1802259    aitor      600        12288      2          dest         
+0x00000000 2719764    aitor      600        323584     2          dest         
+0x00000000 2883605    aitor      600        20480      2          dest         
+0x00000000 2981910    aitor      600        20480      2          dest         
+
+1494768459: Iniciando sesión el día 14  del mes 5 a las 15:27.
+1494768459: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494768459: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494768460: COMMAND <cp ./client.? .trazas-5>
+1494768460: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494768460: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h27\n" | 	  ftp -n 2>&1 > /dev/null>
+1494768470: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494768470: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 36100  bytes 31744156 (31.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 23629  bytes 2674384 (2.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 4450  bytes 254275 (254.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4450  bytes 254275 (254.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494768481: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494768481: COMMAND <ipcs -m >> .trazas-5/alumno-72106540E 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0xec010b39 0          aitor      600        3208       2                       
+0x00000000 2097153    aitor      600        20480      2          dest         
+0x00000000 458754     aitor      600        40960      2          dest         
+0x72106540 3211267    aitor      666        1024       0                       
+0x00000000 131076     aitor      600        3796992    2          dest         
+0x00000000 425989     aitor      600        3796992    2          dest         
+0x00000000 491526     aitor      600        40960      2          dest         
+0x00000000 524295     aitor      600        282624     2          dest         
+0x00000000 557064     aitor      600        282624     2          dest         
+0x00000000 2752521    aitor      600        86016      2          dest         
+0x00000000 688139     aitor      600        323584     2          dest         
+0x00000000 1835020    aitor      600        12288      2          dest         
+0x00000000 884749     aitor      600        1597440    2          dest         
+0x00000000 983054     aitor      600        88060      2          dest         
+0x00000000 3244047    aitor      600        1597440    2          dest         
+0x00000000 1540112    aitor      600        36864      2          dest         
+0x00000000 2654225    aitor      600        1648536    2          dest         
+0x00000000 1769490    aitor      600        86016      2          dest         
+0x00000000 1802259    aitor      600        12288      2          dest         
+0x00000000 2719764    aitor      600        323584     2          dest         
+0x00000000 2883605    aitor      600        20480      2          dest         
+0x00000000 2981910    aitor      600        20480      2          dest         
+
+1494768481: 
+-------------------------------------------------------
+Existe YA un segmento de memoria compartida con clave 0x72106540
+-------------------------------------------------------
+1494768481: Problemas en la inicialización de dispositivos1494768481: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494769007: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494769007: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494769009: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 5485 DEVICE-1>
+-----------------------------------------------
+1494769010: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <715>.
+********************************************[0m
+1494769010: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769010: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <444>.
+********************************************[0m
+1494769010: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769010: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494769010: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 47115>
+-----------------------------------------------
+1494769011: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR Bad original port 47115
+)
+>
+
+-------------------------------------------------------
+1494769011: 
+-------------------------------------------------------
+Esperando comando <BYE> en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769011: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<BYE>
+-----------------------------------------------
+1494769012: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769012: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <362>.
+********************************************[0m
+1494769012: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769012: 
+-------------------------------------------------------
+Alcanzado final de lista comandos en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769012: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494769012: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494769012: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494769012: COMMAND <cp ./client.? .trazas-5>
+1494769012: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494769012: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h27\n" | 	  ftp -n 2>&1 > /dev/null>
+1494769436: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494769436: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494769438: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 5703 DEVICE-1>
+-----------------------------------------------
+1494769439: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769439: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769439: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494769439: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 47115>
+-----------------------------------------------
+1494769440: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR Bad original port 47115
+)
+>
+
+-------------------------------------------------------
+1494769440: 
+-------------------------------------------------------
+Esperando comando <BYE> en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769440: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<BYE>
+-----------------------------------------------
+1494769441: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769441: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769441: 
+-------------------------------------------------------
+Alcanzado final de lista comandos en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769441: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494769441: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494769441: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494769441: COMMAND <cp ./client.? .trazas-5>
+1494769441: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494769441: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h27\n" | 	  ftp -n 2>&1 > /dev/null>
+1494769686: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494769686: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494769689: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 5749 DEVICE-1>
+-----------------------------------------------
+1494769690: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769690: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769690: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494769690: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494769691: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <441>.
+********************************************[0m
+1494769691: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769691: 
+-------------------------------------------------------
+Esperando comando <BYE> en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769691: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<BYE>
+-----------------------------------------------
+1494769692: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494769692: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494769692: 
+-------------------------------------------------------
+Alcanzado final de lista comandos en dispositivo <DEVICE-1>
+
+-------------------------------------------------------
+1494769692: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494769692: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494769692: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494769692: COMMAND <cp ./client.? .trazas-5>
+1494769692: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494769692: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-15h27\n" | 	  ftp -n 2>&1 > /dev/null>
+1494793888: Iniciando sesión el día 14  del mes 5 a las 22:31.
+1494793888: COMMAND <cp -f /tmp/.monitor ./examen-5-64bits-2016-17>
+1494793888: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494793888: COMMAND <cp ./client.? .trazas-5>
+1494793888: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494793888: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-22h31\n" | 	  ftp -n 2>&1 > /dev/null>
+1494793898: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494793898: COMMAND <ifconfig >> .trazas-5/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 42720  bytes 38086909 (38.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13420  bytes 880159 (880.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 340  bytes 25068 (25.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 340  bytes 25068 (25.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494793906: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494793906: COMMAND <ipcs -m >> .trazas-5/alumno-72106540E 2>&1>
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0xec010b39 0          aitor      600        3208       2                       
+0x00000000 32769      aitor      600        1648536    2          dest         
+0x00000000 65538      aitor      600        88060      2          dest         
+0x00000000 229379     aitor      600        40960      2          dest         
+0x00000000 196612     aitor      600        3796992    2          dest         
+0x00000000 163845     aitor      600        3796992    2          dest         
+0x00000000 262150     aitor      600        40960      2          dest         
+0x00000000 294919     aitor      600        282624     2          dest         
+0x00000000 327688     aitor      600        282624     2          dest         
+
+1494793907: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494793911: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 14940 aitor>
+-----------------------------------------------
+1494793912: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <715>.
+********************************************[0m
+1494793912: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494793912: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <444>.
+********************************************[0m
+1494793912: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494793912: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494793912: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494793913: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <441>.
+********************************************[0m
+1494793913: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494793913: 
+-------------------------------------------------------
+Esperando comando <BYE> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494793913: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<BYE>
+-----------------------------------------------
+1494793914: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494793914: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <362>.
+********************************************[0m
+1494793914: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494793914: 
+-------------------------------------------------------
+Alcanzado final de lista comandos en dispositivo <aitor>
+
+-------------------------------------------------------
+1494793914: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494793914: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494793914: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-5" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494793914: COMMAND <cp ./client.? .trazas-5>
+1494793914: COMMAND <tar zcf save_file-72106540E .trazas-5 > /dev/null>
+1494793914: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-5\nput save_file-72106540E 72106540E-14-5-22h31\n" | 	  ftp -n 2>&1 > /dev/null>
+1494796849: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494796849: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494796853: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15219 aitor>
+-----------------------------------------------
+1494796854: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494796854: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494796854: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494796854: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494796855: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494796855: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494796855: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494796855: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494796855: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494796870: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494796885: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494796885: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797046: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797046: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797048: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15255 aitor>
+-----------------------------------------------
+1494797049: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797049: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797049: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797049: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797050: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797050: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797050: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797050: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797050: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797065: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797080: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797080: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797210: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797210: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797212: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15277 aitor>
+-----------------------------------------------
+1494797213: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797213: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797213: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797213: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797214: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797214: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797214: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797214: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797214: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797229: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797244: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797244: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797464: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797464: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797466: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15292 aitor>
+-----------------------------------------------
+1494797467: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797467: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797467: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797467: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797468: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797468: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797468: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797468: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797468: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797483: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797498: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797498: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797556: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797556: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797558: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15307 aitor>
+-----------------------------------------------
+1494797559: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797559: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797559: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797559: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797560: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797560: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797560: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797560: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797560: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797575: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797590: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797590: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797672: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797672: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797673: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15325 aitor>
+-----------------------------------------------
+1494797674: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797674: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797674: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797674: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797675: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797675: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797675: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797675: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797675: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797690: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797705: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797705: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494797864: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494797864: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494797865: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15343 aitor>
+-----------------------------------------------
+1494797866: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494797866: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797866: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494797866: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494797867: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494797867: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494797867: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494797867: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494797867: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494797882: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494797897: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494797897: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494798188: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494798188: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494798190: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15545 aitor>
+-----------------------------------------------
+1494798191: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494798191: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798191: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494798191: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494798192: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798192: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494798192: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798192: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<OK
+T 3000>
+-----------------------------------------------
+1494798192: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<ERR Event not defined
+>
+
+-------------------------------------------------------
+1494798207: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494798222: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494798222: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494798522: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494798522: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494798524: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15590 aitor>
+-----------------------------------------------
+1494798525: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494798525: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798525: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494798525: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494798526: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798526: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494798526: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798526: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED >
+-----------------------------------------------
+1494798527: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR bad speed value
+)
+>
+
+-------------------------------------------------------
+1494798527: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494798527: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798527: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 0>
+-----------------------------------------------
+1494798528: 
+-------------------------------------------------------
+Recibido valor RPM=0. INCORRECTO.
+
+-------------------------------------------------------
+1494798528: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR ERROR in rpm number
+)
+>
+
+-------------------------------------------------------
+1494798528: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494798528: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798543: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494798558: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494798558: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494798708: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494798708: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494798711: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15607 aitor>
+-----------------------------------------------
+1494798712: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494798712: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798712: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494798712: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494798713: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798713: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494798713: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798713: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 272>>
+-----------------------------------------------
+1494798714: 
+-------------------------------------------------------
+Recibido valor SPEED=272. CORRECTO.
+
+-------------------------------------------------------
+1494798714: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <375>.
+********************************************[0m
+1494798714: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=272
+
+-------------------------------------------------------
+1494798714: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798714: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494798714: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798714: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 0>
+-----------------------------------------------
+1494798715: 
+-------------------------------------------------------
+Recibido valor RPM=0. INCORRECTO.
+
+-------------------------------------------------------
+1494798715: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR ERROR in rpm number
+)
+>
+
+-------------------------------------------------------
+1494798715: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494798715: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494798730: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494798745: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494798745: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494798997: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494798997: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494798998: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15627 aitor>
+-----------------------------------------------
+1494798999: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494798999: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494798999: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494798999: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494799000: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799000: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799000: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799000: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 134>>
+-----------------------------------------------
+1494799001: 
+-------------------------------------------------------
+Recibido valor SPEED=134. CORRECTO.
+
+-------------------------------------------------------
+1494799001: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=134
+
+-------------------------------------------------------
+1494799001: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799001: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799001: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799001: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 0>
+-----------------------------------------------
+1494799002: 
+-------------------------------------------------------
+Recibido valor RPM=0. INCORRECTO.
+
+-------------------------------------------------------
+1494799002: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK Forced response (ERR ERROR in rpm number
+)
+>
+
+-------------------------------------------------------
+1494799002: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494799002: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799017: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494799032: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494799032: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494799252: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494799252: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494799255: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15648 aitor>
+-----------------------------------------------
+1494799256: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494799256: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799256: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494799256: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494799257: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799257: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799257: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799257: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 94>>
+-----------------------------------------------
+1494799258: 
+-------------------------------------------------------
+Recibido valor SPEED=94. CORRECTO.
+
+-------------------------------------------------------
+1494799258: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=94
+
+-------------------------------------------------------
+1494799258: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799258: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799258: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799258: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 4567>
+-----------------------------------------------
+1494799259: 
+-------------------------------------------------------
+Recibido valor RPM=4567. CORRECTO.
+
+-------------------------------------------------------
+1494799259: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <232>.
+********************************************[0m
+1494799259: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=4567
+
+-------------------------------------------------------
+1494799259: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799259: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494799259: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799274: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494799289: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494799289: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494799526: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494799526: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494799528: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15664 aitor>
+-----------------------------------------------
+1494799529: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494799529: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799529: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494799529: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494799530: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799530: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799530: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799530: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 62>>
+-----------------------------------------------
+1494799531: 
+-------------------------------------------------------
+Recibido valor SPEED=62. CORRECTO.
+
+-------------------------------------------------------
+1494799531: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=62
+
+-------------------------------------------------------
+1494799531: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799531: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799531: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799531: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 973>
+-----------------------------------------------
+1494799532: 
+-------------------------------------------------------
+Recibido valor RPM=973. CORRECTO.
+
+-------------------------------------------------------
+1494799532: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=973
+
+-------------------------------------------------------
+1494799532: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799532: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494799532: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799547: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494799562: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494799562: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494799623: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494799623: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494799625: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15687 aitor>
+-----------------------------------------------
+1494799626: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494799626: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799626: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494799626: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494799627: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799627: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799627: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799627: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 142>>
+-----------------------------------------------
+1494799628: 
+-------------------------------------------------------
+Recibido valor SPEED=142. CORRECTO.
+
+-------------------------------------------------------
+1494799628: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=142
+
+-------------------------------------------------------
+1494799628: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799628: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799628: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799628: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 1347>
+-----------------------------------------------
+1494799629: 
+-------------------------------------------------------
+Recibido valor RPM=1347. CORRECTO.
+
+-------------------------------------------------------
+1494799629: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=1347
+
+-------------------------------------------------------
+1494799629: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799629: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494799629: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799644: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494799659: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494799659: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494799854: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494799854: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494799857: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15703 aitor>
+-----------------------------------------------
+1494799858: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494799858: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799858: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494799858: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494799859: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799859: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799859: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799859: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 172>>
+-----------------------------------------------
+1494799860: 
+-------------------------------------------------------
+Recibido valor SPEED=172. CORRECTO.
+
+-------------------------------------------------------
+1494799860: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=172
+
+-------------------------------------------------------
+1494799860: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799860: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494799860: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799860: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 1537>
+-----------------------------------------------
+1494799861: 
+-------------------------------------------------------
+Recibido valor RPM=1537. CORRECTO.
+
+-------------------------------------------------------
+1494799861: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=1537
+
+-------------------------------------------------------
+1494799861: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494799861: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494799861: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494799876: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494799891: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494799891: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494800088: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494800088: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494800091: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<HELLO 15720 aitor>
+-----------------------------------------------
+1494800092: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494800092: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494800092: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494800092: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<PORT 3000>
+-----------------------------------------------
+1494800093: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494800093: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800093: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800093: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<SPEED 70>>
+-----------------------------------------------
+1494800094: 
+-------------------------------------------------------
+Recibido valor SPEED=70. CORRECTO.
+
+-------------------------------------------------------
+1494800094: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=70
+
+-------------------------------------------------------
+1494800094: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494800094: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800094: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800094: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3000):
+<RPM 4935>
+-----------------------------------------------
+1494800095: 
+-------------------------------------------------------
+Recibido valor RPM=4935. CORRECTO.
+
+-------------------------------------------------------
+1494800095: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=4935
+
+-------------------------------------------------------
+1494800095: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3000)
+<OK
+>
+
+-------------------------------------------------------
+1494800095: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494800095: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800110: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494800125: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494800125: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494800220: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494800220: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494800222: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15756 aitor>
+-----------------------------------------------
+1494800223: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494800223: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800223: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494800223: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494800224: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800224: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800224: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800224: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<SPEED 222>>
+-----------------------------------------------
+1494800225: 
+-------------------------------------------------------
+Recibido valor SPEED=222. CORRECTO.
+
+-------------------------------------------------------
+1494800225: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=222
+
+-------------------------------------------------------
+1494800225: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800225: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800225: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800225: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<HELLO 15761 aitor2>
+-----------------------------------------------
+1494800226: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494800226: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <734>.
+********************************************[0m
+1494800226: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <12> es <154>.
+********************************************[0m
+1494800226: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800226: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494800226: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<RPM 1549>
+-----------------------------------------------
+1494800227: 
+-------------------------------------------------------
+Recibido valor RPM=1549. CORRECTO.
+
+-------------------------------------------------------
+1494800227: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=1549
+
+-------------------------------------------------------
+1494800227: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800227: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494800227: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800227: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<PORT 3011>
+-----------------------------------------------
+1494800228: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800228: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800228: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor2>
+
+-------------------------------------------------------
+1494800228: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<SPEED 344>>
+-----------------------------------------------
+1494800229: 
+-------------------------------------------------------
+Recibido valor SPEED=344. CORRECTO.
+
+-------------------------------------------------------
+1494800229: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=344
+
+-------------------------------------------------------
+1494800229: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800229: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800229: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor2>
+
+-------------------------------------------------------
+1494800229: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<RPM 5227>
+-----------------------------------------------
+1494800230: 
+-------------------------------------------------------
+Recibido valor RPM=5227. CORRECTO.
+
+-------------------------------------------------------
+1494800230: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=5227
+
+-------------------------------------------------------
+1494800230: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800230: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494800230: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor2>
+
+-------------------------------------------------------
+1494800245: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494800260: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494800260: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494800931: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494800931: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494800933: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15794 aitor>
+-----------------------------------------------
+1494800934: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494800934: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800934: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494800934: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494800935: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494800935: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800935: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494800935: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<HELLO 15793 aitor2>
+-----------------------------------------------
+1494800936: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494800936: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800936: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494800936: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<PORT 3011>
+-----------------------------------------------
+1494800937: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494800937: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494800937: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor2>
+
+-------------------------------------------------------
+1494800952: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494800967: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494800967: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494801080: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494801080: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494801081: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15847 aitor>
+-----------------------------------------------
+1494801082: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494801082: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801082: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494801082: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494801083: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801083: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801083: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801083: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<HELLO 15848 aitor2>
+-----------------------------------------------
+1494801084: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494801084: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494801084: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494801084: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3011):
+<PORT 3011>
+-----------------------------------------------
+1494801085: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3011)
+<OK
+>
+
+-------------------------------------------------------
+1494801085: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801085: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor2>
+
+-------------------------------------------------------
+1494801100: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494801115: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494801115: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494801288: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494801288: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494801290: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15871 aitor>
+-----------------------------------------------
+1494801291: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494801291: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801291: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494801291: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494801292: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801292: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801292: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801307: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494801322: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494801322: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494801463: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494801463: 
+-------------------------------------------------------
+Borrados 1 mensajes pendientes de la cola de mensajes
+
+-------------------------------------------------------
+1494801463: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494801464: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15890 aitor>
+-----------------------------------------------
+1494801465: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494801465: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801465: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494801465: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494801466: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801466: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801466: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801481: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494801496: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494801496: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494801680: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494801680: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494801682: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15909 aitor>
+-----------------------------------------------
+1494801683: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494801683: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801683: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494801683: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494801684: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801684: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801684: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801684: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<SPEED 298>>
+-----------------------------------------------
+1494801685: 
+-------------------------------------------------------
+Recibido valor SPEED=298. CORRECTO.
+
+-------------------------------------------------------
+1494801685: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=298
+
+-------------------------------------------------------
+1494801685: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801685: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494801685: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801685: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<RPM 395>
+-----------------------------------------------
+1494801686: 
+-------------------------------------------------------
+Recibido valor RPM=395. CORRECTO.
+
+-------------------------------------------------------
+1494801686: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=395
+
+-------------------------------------------------------
+1494801686: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494801686: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494801686: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494801701: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494801716: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494801716: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494802660: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494802660: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494802661: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15952 aitor>
+-----------------------------------------------
+1494802662: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494802662: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802662: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494802662: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494802663: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802663: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494802663: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802663: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<SPEED 138>>
+-----------------------------------------------
+1494802664: 
+-------------------------------------------------------
+Recibido valor SPEED=138. CORRECTO.
+
+-------------------------------------------------------
+1494802664: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=138
+
+-------------------------------------------------------
+1494802664: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802664: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494802664: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802664: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<RPM 73>
+-----------------------------------------------
+1494802665: 
+-------------------------------------------------------
+Recibido valor RPM=73. CORRECTO.
+
+-------------------------------------------------------
+1494802665: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=73
+
+-------------------------------------------------------
+1494802665: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802665: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494802665: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802680: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494802695: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494802695: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494802870: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494802870: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494802871: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15977 aitor>
+-----------------------------------------------
+1494802872: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>
+1494802872: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802872: 
+-------------------------------------------------------
+Esperando comando <PORT> en dispositivo <>
+
+-------------------------------------------------------
+1494802872: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<PORT 3010>
+-----------------------------------------------
+1494802873: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802873: 
+-------------------------------------------------------
+Mandando PETICION <2>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494802873: 
+-------------------------------------------------------
+Esperando comando <SPEED> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802873: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<SPEED 328>>
+-----------------------------------------------
+1494802874: 
+-------------------------------------------------------
+Recibido valor SPEED=328. CORRECTO.
+
+-------------------------------------------------------
+1494802874: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de SPEED=328
+
+-------------------------------------------------------
+1494802874: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802874: 
+-------------------------------------------------------
+Mandando PETICION <3>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494802874: 
+-------------------------------------------------------
+Esperando comando <RPM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802874: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<RPM 4567>
+-----------------------------------------------
+1494802875: 
+-------------------------------------------------------
+Recibido valor RPM=4567. CORRECTO.
+
+-------------------------------------------------------
+1494802875: 
+-------------------------------------------------------
+No actualizado en MEMORIA valor de RPM=4567
+
+-------------------------------------------------------
+1494802875: 
+-------------------------------------------------------
+TX (dev=127.0.0.1:3010)
+<OK
+>
+
+-------------------------------------------------------
+1494802875: 
+-------------------------------------------------------
+Bloqueo para acceso a datos AGOTADO
+
+-------------------------------------------------------
+1494802875: 
+-------------------------------------------------------
+Esperando comando <SEM> en dispositivo <aitor>
+
+-------------------------------------------------------
+1494802890: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 1 sesion(es)
+
+-------------------------------------------------------
+1494802905: 
+-------------------------------------------------------
+FINALIZADA una sesión. Pendiente 0 sesion(es)
+
+-------------------------------------------------------
+1494802905: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494803026: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494803026: 
+-----------------------------------------------
+Inicialización de recursos realizada correctamente.
+-----------------------------------------------
+1494803027: 
+-----------------------------------------------
+RX(dev=127.0.0.1:3010):
+<HELLO 15995 aitor>
+-----------------------------------------------
+1494803028: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-5/.n_cliente>

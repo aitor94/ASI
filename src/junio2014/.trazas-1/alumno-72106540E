@@ -1,0 +1,3007 @@
+1494872196: Iniciando sesión el día 15  del mes 5 a las 20:16.
+1494872196: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494872196: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494872196: COMMAND <cp ./client.? .trazas-1>
+1494872196: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494872196: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-20h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1494872206: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494872206: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 9372  bytes 4729418 (4.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7560  bytes 1019700 (1.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 537  bytes 37495 (37.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 537  bytes 37495 (37.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494872240: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494872240: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-W': No existe el archivo o el directorio
+1494872240: 
+-------------------------------------------------------
+CREANDO FIFO </tmp/72106540E-W> PARA ENVIAR MENSAJE
+-------------------------------------------------------
+1494872240: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+prw-rw-r-- 1 aitor aitor 0 may 15 20:17 /tmp/72106540E-W
+1494872240: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872246: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872252: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872258: 
+[5mTemporización AGOTADA 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+.[0m
+1494872258: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494872334: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494872334: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+prw-rw-r-- 1 aitor aitor 0 may 15 20:17 /tmp/72106540E-W
+1494872334: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872340: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872346: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872352: 
+[5mTemporización AGOTADA 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+.[0m
+1494872352: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 1.
+
+*************************************************[0m
+1494872578: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494872578: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+prw-rw-r-- 1 aitor aitor 0 may 15 20:17 /tmp/72106540E-W
+1494872578: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872580: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494872580: COMMAND <ps u >> .trazas-1/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aitor     1506  0.0  0.1  25656  5968 pts/1    Ss   17:23   0:00 /bin/bash
+aitor     2195  0.0  0.1  25636  5944 pts/2    Ss   17:43   0:00 /bin/bash
+aitor     3370  0.0  0.0   4404  1548 pts/1    S+   20:16   0:00 ./examen-1-64bits-2016-17
+aitor     3421  0.0  0.0   4344   708 pts/2    S+   20:22   0:00 ./client 3370
+aitor     3424  0.0  0.0   4496   740 pts/1    S+   20:23   0:00 sh -c ps u >> .trazas-1/alumno-72106540E
+aitor     3425  0.0  0.0  42352  3476 pts/1    R+   20:23   0:00 ps u
+1494872580: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494872580: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494872581: :ok> Operación bien realizada
+
+1494872583: COMMAND <ps u >> .trazas-1/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aitor     1506  0.0  0.1  25656  5968 pts/1    Ss   17:23   0:00 /bin/bash
+aitor     2195  0.0  0.1  25636  5944 pts/2    Ss   17:43   0:00 /bin/bash
+aitor     3370  0.0  0.0   4404  1612 pts/1    S+   20:16   0:00 ./examen-1-64bits-2016-17
+aitor     3421  0.0  0.0   4344   708 pts/2    S+   20:22   0:00 ./client 3370
+aitor     3430  0.0  0.0   4344    84 pts/2    S+   20:23   0:00 ./client 3370
+aitor     3431  0.0  0.0   4344    84 pts/2    S+   20:23   0:00 ./client 3370
+aitor     3432  0.0  0.0   4496   796 pts/1    S+   20:23   0:00 sh -c ps u >> .trazas-1/alumno-72106540E
+aitor     3433  0.0  0.0  42352  3488 pts/1    R+   20:23   0:00 ps u
+1494872583: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494872583: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1494872583: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <703>.
+********************************************[0m
+1494872583: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494872603: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494872603: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <2> .
+
+*************************************************[0m
+1494872603: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494872872: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494872872: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+prw-rw-r-- 1 aitor aitor 0 may 15 20:17 /tmp/72106540E-W
+1494872872: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494872874: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494872874: COMMAND <ps u >> .trazas-1/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aitor     1506  0.0  0.1  25656  5968 pts/1    Ss   17:23   0:00 /bin/bash
+aitor     2195  0.0  0.1  25636  5944 pts/2    Ss   17:43   0:00 /bin/bash
+aitor     3370  0.0  0.0   4404  1612 pts/1    S+   20:16   0:00 ./examen-1-64bits-2016-17
+aitor     3430  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3431  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3462  0.0  0.0   4344   628 pts/2    S+   20:27   0:00 ./client 3370
+aitor     3465  0.0  0.0   4496   704 pts/1    S+   20:27   0:00 sh -c ps u >> .trazas-1/alumno-72106540E
+aitor     3466  0.0  0.0  42352  3340 pts/1    R+   20:27   0:00 ps u
+1494872874: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494872874: 
+Número de procesos cliente (3) inadecuado 
+1494872874: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494872874: :ok> Operación bien realizada
+
+1494872876: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494872876: RECIBIDO MENSAJE: "H<3430>".
+1494872876: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 3430
+-------------------------------------------------------
+1494872876: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <712>.
+********************************************[0m
+1494872896: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494872896: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <3> .
+
+*************************************************[0m
+1494872896: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 1.
+
+*************************************************[0m
+1494873127: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494873127: COMMAND <ls -al /tmp/72106540E-W >> .trazas-1/alumno-72106540E 2>&1>
+prw-rw-r-- 1 aitor aitor 0 may 15 20:27 /tmp/72106540E-W
+1494873127: 
+-------------------------------------------------------
+==> Esperando la señal 10 en el proceso monitor (3370).
+
+-------------------------------------------------------
+1494873133: 
+-------------------------------------------------------
+<== Recibida la señal 10 en el proceso monitor.
+
+-------------------------------------------------------
+1494873133: COMMAND <ps u >> .trazas-1/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aitor     1506  0.0  0.1  25656  5968 pts/1    Ss   17:23   0:00 /bin/bash
+aitor     2195  0.0  0.1  25636  5944 pts/2    Ss   17:43   0:00 /bin/bash
+aitor     3370  0.0  0.0   4404  1612 pts/1    S+   20:16   0:00 ./examen-1-64bits-2016-17
+aitor     3430  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3431  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3471  0.0  0.0   4344    84 pts/2    S    20:27   0:00 ./client 3370
+aitor     3472  0.0  0.0   4344    84 pts/2    S    20:27   0:00 ./client 3370
+aitor     3495  0.0  0.0   4344   628 pts/2    S+   20:32   0:00 ./client 3370
+aitor     3498  0.0  0.0   4496   776 pts/1    S+   20:32   0:00 sh -c ps u >> .trazas-1/alumno-72106540E
+aitor     3499  0.0  0.0  42352  3448 pts/1    R+   20:32   0:00 ps u
+1494873133: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494873133: 
+Número de procesos cliente (5) inadecuado 
+1494873133: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494873133: :ok> Operación bien realizada
+
+1494873135: COMMAND <ps u >> .trazas-1/alumno-72106540E>
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aitor     1506  0.0  0.1  25656  5968 pts/1    Ss   17:23   0:00 /bin/bash
+aitor     2195  0.0  0.1  25636  5944 pts/2    Ss   17:43   0:00 /bin/bash
+aitor     3370  0.0  0.0   4404  1612 pts/1    S+   20:16   0:00 ./examen-1-64bits-2016-17
+aitor     3430  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3431  0.0  0.0   4344    84 pts/2    S    20:23   0:00 ./client 3370
+aitor     3471  0.0  0.0   4344    84 pts/2    S    20:27   0:00 ./client 3370
+aitor     3472  0.0  0.0   4344    84 pts/2    S    20:27   0:00 ./client 3370
+aitor     3495  0.0  0.0   4344   628 pts/2    S+   20:32   0:00 ./client 3370
+aitor     3504  0.0  0.0   4344    84 pts/2    S+   20:32   0:00 ./client 3370
+aitor     3505  0.0  0.0   4344    84 pts/2    S+   20:32   0:00 ./client 3370
+aitor     3506  0.0  0.0   4496   800 pts/1    S+   20:32   0:00 sh -c ps u >> .trazas-1/alumno-72106540E
+aitor     3507  0.0  0.0  42352  3520 pts/1    R+   20:32   0:00 ps u
+1494873135: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494873135: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <1>.
+*******************************************************
+1494873135: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <703>.
+********************************************[0m
+1494873135: 
+----------------------------------------------------------------
+
+Enviando señal SIGUSR1 a procesos para solicitar mensajes Hello
+
+----------------------------------------------------------------
+1494873135: RECIBIDO MENSAJE: "H<3430>".
+1494873135: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 3430
+-------------------------------------------------------
+1494873135: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <712>.
+********************************************[0m
+1494873135: RECIBIDO MENSAJE: "H<3471>".
+1494873135: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 3471
+-------------------------------------------------------
+1494873135: RECIBIDO MENSAJE: "H<3431>".
+1494873135: 
+-------------------------------------------------------
+Mensaje de Bienvenida recibido del proceso 3431
+-------------------------------------------------------
+1494873135: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <581>.
+********************************************[0m
+1494873135: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494873135: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494873135: COMMAND <cp ./client.? .trazas-1>
+1494873135: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494873135: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-20h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1494874517: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494874517: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874517: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494874517: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874519: 
+Recibida una señal no esperada.
+1494874519: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874524: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874529: 
+-----------------------------------------------------------------------
+No se ha creado el dispositivo </tmp/72106540E-R> para enviar mensajes al monitor.
+-----------------------------------------------------------------------
+1494874529: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494874619: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494874619: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874619: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494874619: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874621: 
+Recibida una señal no esperada.
+1494874621: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494874626: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 20:57 /tmp/72106540E-R
+1494874626: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494874626: :ok> Operación bien realizada
+
+1494874626: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494874626: :ok> Operación bien realizada
+
+1494874626: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494874626: 
+------------------------------------------------------------------
+Número de procesos cliente erróneo (7). Deben estar activos tres procesos.
+------------------------------------------------------------------
+1494874626: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494874713: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494874713: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 20:57 /tmp/72106540E-R
+1494874713: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494874713: :ok> Operación bien realizada
+
+1494874713: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494874717: :ok> Operación bien realizada
+
+1494874717: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494874717: 
+------------------------------------------------------------------
+Número de procesos cliente erróneo (7). Deben estar activos tres procesos.
+------------------------------------------------------------------
+1494874717: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494874863: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494874863: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 20:57 /tmp/72106540E-R
+1494874863: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494874867: :ok> Operación bien realizada
+
+1494874867: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494874867: :ok> Operación bien realizada
+
+1494874867: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494874867: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494874867: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494874867: RECIBIDO MENSAJE: "e<3677><32636>".
+1494874867: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494874867: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494875314: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494875314: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:01 /tmp/72106540E-R
+1494875314: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494875318: :ok> Operación bien realizada
+
+1494875318: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494875318: :ok> Operación bien realizada
+
+1494875318: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494875318: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494875318: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494875318: RECIBIDO MENSAJE: "e<3703><0>".
+1494875318: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494875318: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494875559: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494875559: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:08 /tmp/72106540E-R
+1494875559: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494875562: :ok> Operación bien realizada
+
+1494875562: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494875562: :ok> Operación bien realizada
+
+1494875562: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494875562: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494875562: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494875562: RECIBIDO MENSAJE: "e<3724><32588>".
+1494875562: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494875562: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876276: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876276: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:12 /tmp/72106540E-R
+1494876276: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876279: :ok> Operación bien realizada
+
+1494876279: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876279: :ok> Operación bien realizada
+
+1494876279: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876279: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876279: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876279: RECIBIDO MENSAJE: "e<3759><32638>".
+1494876279: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494876279: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876415: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876415: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:24 /tmp/72106540E-R
+1494876415: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876418: :ok> Operación bien realizada
+
+1494876418: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876418: :ok> Operación bien realizada
+
+1494876418: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876418: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876418: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876418: RECIBIDO MENSAJE: "e<3779><22009>".
+1494876418: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494876418: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876530: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876530: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:26 /tmp/72106540E-R
+1494876530: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876533: :ok> Operación bien realizada
+
+1494876533: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876533: :ok> Operación bien realizada
+
+1494876533: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876533: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876533: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876533: RECIBIDO MENSAJE: "e<3807><0>".
+1494876533: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <4> .
+
+*************************************************[0m
+1494876533: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876619: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876619: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:28 /tmp/72106540E-R
+1494876619: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876622: :ok> Operación bien realizada
+
+1494876622: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876622: :ok> Operación bien realizada
+
+1494876622: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876622: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876622: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876622: RECIBIDO MENSAJE: "e<3826><94>".
+1494876622: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494876622: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876622: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876642: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494876642: 
+Limpiando datos del dispositivo. 5 bytes leidos
+1494876642: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1494876642: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876817: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876817: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:30 /tmp/72106540E-R
+1494876817: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876817: :ok> Operación bien realizada
+
+1494876817: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876817: :ok> Operación bien realizada
+
+1494876817: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876817: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876817: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876817: RECIBIDO MENSAJE: "e<3827><94>".
+1494876817: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494876817: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876817: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876817: RECIBIDO MENSAJE: "e<3826><-28>".
+1494876817: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1494876817: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876949: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494876949: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:33 /tmp/72106540E-R
+1494876949: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494876949: :ok> Operación bien realizada
+
+1494876949: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494876949: :ok> Operación bien realizada
+
+1494876949: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494876949: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876949: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876949: RECIBIDO MENSAJE: "e<3827><94>".
+1494876949: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494876949: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494876949: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494876949: RECIBIDO MENSAJE: "e<3826><1>".
+1494876949: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1494876949: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494876959: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494876959: COMMAND <cp ./client.? .trazas-1>
+1494876959: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494876959: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-20h16\n" | 	  ftp -n 2>&1 > /dev/null>
+1494877013: Iniciando sesión el día 15  del mes 5 a las 21:36.
+1494877013: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494877013: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494877013: COMMAND <cp ./client.? .trazas-1>
+1494877013: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494877013: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-21h36\n" | 	  ftp -n 2>&1 > /dev/null>
+1494877023: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494877023: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 11410  bytes 5571695 (5.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 9241  bytes 1266446 (1.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 537  bytes 37495 (37.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 537  bytes 37495 (37.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494877034: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494877034: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:35 /tmp/72106540E-R
+1494877034: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494877038: :ok> Operación bien realizada
+
+1494877038: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494877038: :ok> Operación bien realizada
+
+1494877038: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494877206: Iniciando sesión el día 15  del mes 5 a las 21:40.
+1494877206: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494877206: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494877206: COMMAND <cp ./client.? .trazas-1>
+1494877206: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494877206: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-21h40\n" | 	  ftp -n 2>&1 > /dev/null>
+1494877216: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494877216: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 11411  bytes 5571755 (5.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 9248  bytes 1266996 (1.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 537  bytes 37495 (37.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 537  bytes 37495 (37.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494877349: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494877349: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:37 /tmp/72106540E-R
+1494877349: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494877349: :ok> Operación bien realizada
+
+1494877349: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494877349: :ok> Operación bien realizada
+
+1494877349: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494877349: 
+------------------------------------------------------------------
+Número de procesos cliente erróneo (1). Deben estar activos tres procesos.
+------------------------------------------------------------------
+1494877349: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494877396: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494877396: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:37 /tmp/72106540E-R
+1494877396: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494877401: :ok> Operación bien realizada
+
+1494877401: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494877401: :ok> Operación bien realizada
+
+1494877401: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494877401: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494877401: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494877401: RECIBIDO MENSAJE: "e<4010><94>".
+1494877401: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494877401: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494877401: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494877421: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494877421: 
+Limpiando datos del dispositivo. 5 bytes leidos
+1494877421: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1494877421: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494878085: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494878085: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:43 /tmp/72106540E-R
+1494878085: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494878089: :ok> Operación bien realizada
+
+1494878089: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494878089: :ok> Operación bien realizada
+
+1494878089: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494878089: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494878089: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494878089: RECIBIDO MENSAJE: "e<4051><94>".
+1494878089: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494878089: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494878089: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494878089: RECIBIDO MENSAJE: "e<4048><228>".
+1494878089: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <5> .
+
+*************************************************[0m
+1494878089: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 2.
+
+*************************************************[0m
+1494878277: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494878277: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 15 21:54 /tmp/72106540E-R
+1494878277: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494878280: :ok> Operación bien realizada
+
+1494878280: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494878280: :ok> Operación bien realizada
+
+1494878280: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494878280: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <4> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494878280: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494878280: RECIBIDO MENSAJE: "e<4080><94>".
+1494878280: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <94>.
+********************************************[0m
+1494878280: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <5> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494878280: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494878280: RECIBIDO MENSAJE: "e<4077><513>".
+1494878280: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <5> es <131>.
+********************************************[0m
+1494878280: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494878280: RECIBIDO MENSAJE: "e<4081><714>".
+1494878280: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <6> es <580>.
+********************************************[0m
+1494878280: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494878280: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494878280: COMMAND <cp ./client.? .trazas-1>
+1494878280: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494878280: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-21h40\n" | 	  ftp -n 2>&1 > /dev/null>
+1494879671: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494879671: COMMAND <cp ./client.? .trazas-1>
+1494879671: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494879671: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-15-5-21h40\n" | 	  ftp -n 2>&1 > /dev/null>
+1494918707: Iniciando sesión el día 16  del mes 5 a las 9:11.
+1494918707: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494918707: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494918707: COMMAND <cp ./client.? .trazas-1>
+1494918707: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494918707: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h11\n" | 	  ftp -n 2>&1 > /dev/null>
+1494918707: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494918707: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 2480  bytes 1733390 (1.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1775  bytes 265144 (265.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 370  bytes 27536 (27.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 370  bytes 27536 (27.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494918714: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494918714: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918714: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494918714: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918719: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918724: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918729: 
+-----------------------------------------------------------------------
+No se ha creado el dispositivo </tmp/72106540E-R> para enviar mensajes al monitor.
+-----------------------------------------------------------------------
+1494918729: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494918729: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494918752: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494918752: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:12 /tmp/72106540E-R
+1494918752: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494918752: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494918752: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494918913: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494918913: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:12 /tmp/72106540E-R
+1494918913: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494918913: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494918913: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494918925: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494918925: COMMAND <cp ./client.? .trazas-1>
+1494918925: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494918925: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h11\n" | 	  ftp -n 2>&1 > /dev/null>
+1494918927: Iniciando sesión el día 16  del mes 5 a las 9:15.
+1494918927: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494918927: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494918927: COMMAND <cp ./client.? .trazas-1>
+1494918927: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494918927: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h15\n" | 	  ftp -n 2>&1 > /dev/null>
+1494918928: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494918928: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 2548  bytes 1738743 (1.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1831  bytes 280873 (280.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 370  bytes 27536 (27.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 370  bytes 27536 (27.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494918944: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494918944: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:12 /tmp/72106540E-R
+1494918944: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494918944: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494918944: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494918992: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494918992: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918992: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494918992: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494918997: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494919002: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:16 /tmp/72106540E-R
+1494920489: Iniciando sesión el día 16  del mes 5 a las 9:41.
+1494920489: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494920489: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494920489: COMMAND <cp ./client.? .trazas-1>
+1494920489: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494920489: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h41\n" | 	  ftp -n 2>&1 > /dev/null>
+1494920489: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494920489: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 1165  bytes 671724 (671.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 907  bytes 121981 (121.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 338  bytes 24912 (24.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 338  bytes 24912 (24.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494920501: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494920501: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920501: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494920501: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920506: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:41 /tmp/72106540E-R
+1494920506: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494920506: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494920506: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494920616: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494920616: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920616: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494920616: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920621: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:43 /tmp/72106540E-R
+1494920621: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494920621: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494920621: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494920657: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494920657: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920657: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494920657: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920662: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:44 /tmp/72106540E-R
+1494920662: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494920662: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 2.
+
+*************************************************[0m
+1494920929: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494920929: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920929: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494920929: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494920934: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:48 /tmp/72106540E-R
+1494920934: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494920934: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494920934: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494920972: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494920972: COMMAND <cp ./client.? .trazas-1>
+1494920972: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494920972: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h41\n" | 	  ftp -n 2>&1 > /dev/null>
+1494921023: Iniciando sesión el día 16  del mes 5 a las 9:50.
+1494921023: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494921023: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494921023: COMMAND <cp ./client.? .trazas-1>
+1494921023: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494921023: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h50\n" | 	  ftp -n 2>&1 > /dev/null>
+1494921023: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494921023: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 1604  bytes 793672 (793.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1316  bytes 193809 (193.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 338  bytes 24912 (24.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 338  bytes 24912 (24.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494921042: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921042: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:48 /tmp/72106540E-R
+1494921042: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494921042: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494921042: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494921052: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921052: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:48 /tmp/72106540E-R
+1494921052: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494921052: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494921052: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494921054: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921054: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:48 /tmp/72106540E-R
+1494921054: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494921054: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494921054: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494921069: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494921069: COMMAND <cp ./client.? .trazas-1>
+1494921069: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494921069: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h50\n" | 	  ftp -n 2>&1 > /dev/null>
+1494921431: Iniciando sesión el día 16  del mes 5 a las 9:57.
+1494921431: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494921431: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494921431: COMMAND <cp ./client.? .trazas-1>
+1494921431: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494921431: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h57\n" | 	  ftp -n 2>&1 > /dev/null>
+1494921431: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494921431: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 39  bytes 3911 (3.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 113  bytes 19573 (19.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 334  bytes 24604 (24.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 334  bytes 24604 (24.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494921452: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921452: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494921452: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494921452: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494921457: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:57 /tmp/72106540E-R
+1494921457: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494921457: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494921457: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 3.
+
+*************************************************[0m
+1494921756: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921756: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 09:57 /tmp/72106540E-R
+1494921756: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494921760: :ok> Operación bien realizada
+
+1494921760: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494921760: :ok> Operación bien realizada
+
+1494921760: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494921760: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494921760: :ok> Operación bien realizada
+
+1494921760: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494921760: :ok> Operación bien realizada
+
+1494921760: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494921760: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <9> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494921760: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494921760: RECIBIDO MENSAJE: "r<1897><347>".
+1494921760: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1494921760: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <954>.
+********************************************[0m
+1494921760: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <9>.
+*******************************************************
+1494921760: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <9> .
+
+*************************************************[0m
+1494921760: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <10>.
+*******************************************************
+1494921760: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <10> es <24>.
+********************************************[0m
+1494921760: 
+*************************************************
+:ok> Ejercicio 3 bien ejecutado.
+*************************************************
+1494921760: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494921760: COMMAND <cp ./client.? .trazas-1>
+1494921760: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494921760: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h57\n" | 	  ftp -n 2>&1 > /dev/null>
+1494921997: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494921997: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494921997: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494921997: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494922002: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 10:06 /tmp/72106540E-R
+1494922002: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494922002: :ok> Operación bien realizada
+
+1494922002: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494922002: :ok> Operación bien realizada
+
+1494922002: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494922002: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494922002: :ok> Operación bien realizada
+
+1494922002: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494922002: :ok> Operación bien realizada
+
+1494922002: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494922002: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <9> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494922002: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494922002: RECIBIDO MENSAJE: "r<2075><975>".
+1494922002: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <8>.
+*******************************************************
+1494922002: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <8> es <954>.
+********************************************[0m
+1494922002: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <9>.
+*******************************************************
+1494922002: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <9> es <975>.
+********************************************[0m
+1494922002: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <10>.
+*******************************************************
+1494922002: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <10> es <24>.
+********************************************[0m
+1494922002: 
+*************************************************
+:ok> Ejercicio 3 bien ejecutado.
+*************************************************
+1494922002: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494922002: COMMAND <cp ./client.? .trazas-1>
+1494922002: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494922002: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-9h57\n" | 	  ftp -n 2>&1 > /dev/null>
+1494924262: Iniciando sesión el día 16  del mes 5 a las 10:44.
+1494924262: COMMAND <cp -f /tmp/.monitor ./examen-1-64bits-2016-17>
+1494924263: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494924263: COMMAND <cp ./client.? .trazas-1>
+1494924263: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494924263: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-10h44\n" | 	  ftp -n 2>&1 > /dev/null>
+1494924263: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494924263: COMMAND <ifconfig >> .trazas-1/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 309  bytes 201282 (201.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 234  bytes 28851 (28.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 338  bytes 24912 (24.9 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 338  bytes 24912 (24.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494924288: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494924288: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494924288: 
+-------------------------------------------------------
+Esperando la creación del dispositivo </tmp/72106540E-R>.
+-------------------------------------------------------
+1494924288: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+ls: no se puede acceder a '/tmp/72106540E-R': No existe el archivo o el directorio
+1494924293: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 10:44 /tmp/72106540E-R
+1494924293: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494924293: :ok> Operación bien realizada
+
+1494924293: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494924293: :ok> Operación bien realizada
+
+1494924293: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494924293: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494924293: :ok> Operación bien realizada
+
+1494924293: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494924293: :ok> Operación bien realizada
+
+1494924293: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494924293: 
+-----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación del semáforo <0x72106540> por el proceso <client>.
+-----------------------------------------------------------------------------------
+1494924293: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494924293: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924293: RECIBIDO MENSAJE: "e<2039><348>".
+1494924293: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924293: RECIBIDO MENSAJE: "e<2033><741>".
+1494924293: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <11> es <421>.
+********************************************[0m
+1494924293: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494924293: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924293: RECIBIDO MENSAJE: "r<2033><514>".
+1494924293: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494924798: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494924798: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 10:44 /tmp/72106540E-R
+1494924798: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494924803: :ok> Operación bien realizada
+
+1494924803: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494924803: :ok> Operación bien realizada
+
+1494924803: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494924803: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494924803: :ok> Operación bien realizada
+
+1494924803: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494924803: :ok> Operación bien realizada
+
+1494924803: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494924803: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494924803: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924803: RECIBIDO MENSAJE: "e<2104><928>".
+1494924803: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924803: RECIBIDO MENSAJE: "e<2104><913>".
+1494924803: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <11> .
+
+*************************************************[0m
+1494924803: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494924803: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494924803: RECIBIDO MENSAJE: "r<2102><790>".
+1494924803: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494925214: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925214: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 10:53 /tmp/72106540E-R
+1494925214: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925218: :ok> Operación bien realizada
+
+1494925218: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925218: :ok> Operación bien realizada
+
+1494925218: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925218: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494925218: :ok> Operación bien realizada
+
+1494925218: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494925218: :ok> Operación bien realizada
+
+1494925218: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494925218: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925218: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925218: RECIBIDO MENSAJE: "e<2154><956>".
+1494925218: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925218: RECIBIDO MENSAJE: "e<2154><333>".
+1494925218: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <11> .
+
+*************************************************[0m
+1494925218: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925218: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925218: RECIBIDO MENSAJE: "r<2150><714>".
+1494925218: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494925433: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925433: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:00 /tmp/72106540E-R
+1494925433: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925436: :ok> Operación bien realizada
+
+1494925436: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925436: :ok> Operación bien realizada
+
+1494925436: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925436: 
+------------------------------------------------------------------
+Número de procesos cliente erróneo (1). Deben estar activos tres procesos.
+------------------------------------------------------------------
+1494925436: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <7> .
+
+*************************************************[0m
+1494925436: 
+[5m*************************************************
+Problemas en la inicialización del ejercicio 4.
+
+*************************************************[0m
+1494925561: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925561: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:00 /tmp/72106540E-R
+1494925561: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925563: :ok> Operación bien realizada
+
+1494925563: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925563: :ok> Operación bien realizada
+
+1494925563: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925563: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494925563: :ok> Operación bien realizada
+
+1494925563: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494925563: :ok> Operación bien realizada
+
+1494925563: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494925563: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925563: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925563: RECIBIDO MENSAJE: "e<2251><384>".
+1494925563: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925563: RECIBIDO MENSAJE: "e<2251><561>".
+1494925563: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <11> .
+
+*************************************************[0m
+1494925563: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925563: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925563: RECIBIDO MENSAJE: "r<2246><646>".
+1494925563: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494925724: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925724: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:06 /tmp/72106540E-R
+1494925724: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925725: :ok> Operación bien realizada
+
+1494925725: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925725: :ok> Operación bien realizada
+
+1494925725: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925725: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494925725: :ok> Operación bien realizada
+
+1494925725: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494925725: :ok> Operación bien realizada
+
+1494925725: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494925725: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925725: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925725: RECIBIDO MENSAJE: "e<2270><196>".
+1494925725: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <11> .
+
+*************************************************[0m
+1494925725: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925725: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925725: RECIBIDO MENSAJE: "r<2271><898>".
+1494925725: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494925806: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925806: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:08 /tmp/72106540E-R
+1494925806: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925809: :ok> Operación bien realizada
+
+1494925809: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925809: :ok> Operación bien realizada
+
+1494925809: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925809: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494925809: :ok> Operación bien realizada
+
+1494925809: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494925809: :ok> Operación bien realizada
+
+1494925809: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494925809: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925809: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925809: RECIBIDO MENSAJE: "e<2290><328>".
+1494925809: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925809: RECIBIDO MENSAJE: "e<2290><753>".
+1494925809: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <11> .
+
+*************************************************[0m
+1494925809: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925809: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925809: RECIBIDO MENSAJE: "r<2286><6>".
+1494925809: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 4.
+
+*************************************************[0m
+1494925996: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494925996: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:10 /tmp/72106540E-R
+1494925996: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494925998: :ok> Operación bien realizada
+
+1494925998: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494925998: :ok> Operación bien realizada
+
+1494925998: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494925998: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494925998: :ok> Operación bien realizada
+
+1494925998: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494925998: :ok> Operación bien realizada
+
+1494925998: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494925998: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <11> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925998: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925998: RECIBIDO MENSAJE: "e<2311><668>".
+1494925998: 
+-------------------------------------------------------
+Mandando PETICION <E>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925998: RECIBIDO MENSAJE: "e<2307><101>".
+1494925998: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <11> es <421>.
+********************************************[0m
+1494925998: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <12> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494925998: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925998: RECIBIDO MENSAJE: "r<2310><826>".
+1494925998: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <10> es <24>.
+********************************************[0m
+1494925998: 
+-------------------------------------------------------
+Mandando PETICION <R>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494925998: RECIBIDO MENSAJE: "r<2307><755>".
+1494925998: 
+*******************************************************
+ Comprobar condiciones de cumplimiento de la clave <12>.
+*******************************************************
+1494925998: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <12> es <398>.
+********************************************[0m
+1494925998: 
+*************************************************
+:ok> Ejercicio 4 bien ejecutado.
+*************************************************
+1494925998: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494925998: COMMAND <cp ./client.? .trazas-1>
+1494925998: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494925998: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-10h44\n" | 	  ftp -n 2>&1 > /dev/null>
+1494926908: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494926908: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:13 /tmp/72106540E-R
+1494926908: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494926910: :ok> Operación bien realizada
+
+1494926910: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494926910: :ok> Operación bien realizada
+
+1494926910: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494926910: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494926910: :ok> Operación bien realizada
+
+1494926910: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494926910: :ok> Operación bien realizada
+
+1494926910: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494926910: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494926910: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494926930: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494926930: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <13> .
+
+*************************************************[0m
+1494926930: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494926930: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494926953: 
+-------------------------------------------------------
+RESPUESTA NO RECIBIDA A TIEMPO.
+
+-------------------------------------------------------
+1494926953: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <14> .
+
+*************************************************[0m
+1494926953: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494927112: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494927112: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:28 /tmp/72106540E-R
+1494927112: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494927114: :ok> Operación bien realizada
+
+1494927114: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494927114: :ok> Operación bien realizada
+
+1494927114: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494927114: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494927114: :ok> Operación bien realizada
+
+1494927114: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494927114: :ok> Operación bien realizada
+
+1494927114: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494927114: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927114: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927114: RECIBIDO MENSAJE: "+<2379><152>".
+1494927114: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <13> .
+
+*************************************************[0m
+1494927114: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927114: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927117: RECIBIDO MENSAJE: "*<2378><1208>".
+1494927117: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <14> .
+
+*************************************************[0m
+1494927117: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494927309: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494927309: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:31 /tmp/72106540E-R
+1494927309: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494927310: :ok> Operación bien realizada
+
+1494927310: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494927310: :ok> Operación bien realizada
+
+1494927310: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494927310: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494927310: :ok> Operación bien realizada
+
+1494927310: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494927310: :ok> Operación bien realizada
+
+1494927310: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494927310: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927310: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927310: RECIBIDO MENSAJE: "+<2400><26>".
+1494927310: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <13> .
+
+*************************************************[0m
+1494927310: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927310: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927313: RECIBIDO MENSAJE: "*<2399><1052>".
+1494927313: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <14> .
+
+*************************************************[0m
+1494927313: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494927405: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494927405: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:35 /tmp/72106540E-R
+1494927405: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494927407: :ok> Operación bien realizada
+
+1494927407: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494927407: :ok> Operación bien realizada
+
+1494927407: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494927407: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494927407: :ok> Operación bien realizada
+
+1494927407: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494927407: :ok> Operación bien realizada
+
+1494927407: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494927407: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927407: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927407: RECIBIDO MENSAJE: "+<2417><574>".
+1494927407: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <13> .
+
+*************************************************[0m
+1494927407: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927407: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927410: RECIBIDO MENSAJE: "*<2416><1344>".
+1494927410: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <14> .
+
+*************************************************[0m
+1494927410: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494927537: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494927537: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:36 /tmp/72106540E-R
+1494927537: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494927539: :ok> Operación bien realizada
+
+1494927539: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494927539: :ok> Operación bien realizada
+
+1494927539: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494927539: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494927539: :ok> Operación bien realizada
+
+1494927539: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494927539: :ok> Operación bien realizada
+
+1494927539: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494927539: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927539: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927539: RECIBIDO MENSAJE: "+<2437><250757>".
+1494927539: 
+[5m*************************************************
+:NOK> Intento fallido para conseguir la clave <13> .
+
+*************************************************[0m
+1494927539: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927539: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927542: RECIBIDO MENSAJE: "*<2436><172822>".
+1494927542: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <14> es <724>.
+********************************************[0m
+1494927542: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494927827: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494927827: COMMAND <ls -al /tmp/72106540E-R >> .trazas-1/alumno-72106540E 2>&1>
+prwx------ 1 aitor aitor 0 may 16 11:38 /tmp/72106540E-R
+1494927827: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-W> en 20 segundos
+-------------------------------------------------------
+1494927830: :ok> Operación bien realizada
+
+1494927830: 
+-------------------------------------------------------
+Esperando que el cliente abra el dispositivo </tmp/72106540E-R> en 20 segundos
+-------------------------------------------------------
+1494927830: :ok> Operación bien realizada
+
+1494927830: COMMAND <ps -C client -o stat=,pid= | grep -v [Zz] |awk '{print $2}' > .trazas-1/.n_cliente>
+1494927830: 
+----------------------------------------------------------------------------------
+ Esperando 10 segundos a la creación de la memoria compartida <0x72106540> por el proceso <client>.
+----------------------------------------------------------------------------------
+1494927830: :ok> Operación bien realizada
+
+1494927830: 
+--------------------------------------------------------------------------------------
+Esperando 15 segundos a que se enganche a la memoria compartida <0x72106540> el proceso <client>.
+--------------------------------------------------------------------------------------
+1494927830: :ok> Operación bien realizada
+
+1494927830: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <7> es <705>.
+********************************************[0m
+1494927830: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <13> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927830: 
+-------------------------------------------------------
+Mandando PETICION <+>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927830: RECIBIDO MENSAJE: "+<2459><1537>".
+1494927830: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <13> es <203>.
+********************************************[0m
+1494927830: 
+------------------------------------------------------------------
+Enviando información sobre el secreto <14> a través del dispositivo </tmp/72106540E-R>
+------------------------------------------------------------------
+1494927830: 
+-------------------------------------------------------
+Mandando PETICION <*>. Esperando RESPUESTA...... 
+-------------------------------------------------------
+1494927833: RECIBIDO MENSAJE: "*<2458><229140>".
+1494927833: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <14> es <724>.
+********************************************[0m
+1494927833: 
+*************************************************
+:ok> Ejercicio 5 bien ejecutado.
+*************************************************
+1494927833: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494927833: COMMAND <cp ./client.? .trazas-1>
+1494927833: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494927833: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-10h44\n" | 	  ftp -n 2>&1 > /dev/null>
+1494927843: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-1" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494927843: COMMAND <cp ./client.? .trazas-1>
+1494927843: COMMAND <tar zcf save_file-72106540E .trazas-1 > /dev/null>
+1494927843: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/examen-1\nput save_file-72106540E 72106540E-16-5-10h44\n" | 	  ftp -n 2>&1 > /dev/null>

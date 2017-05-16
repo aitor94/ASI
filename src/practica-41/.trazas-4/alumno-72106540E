@@ -1,0 +1,363 @@
+1494859549: Iniciando sesión el día 15  del mes 5 a las 16:45.
+1494859549: COMMAND <cp -f /tmp/.monitor ./monitor4-64bits-v0.6c-2017>
+1494859549: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859549: COMMAND <cp ./client.? .trazas-4>
+1494859549: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859549: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859559: 
+********************************************
+           INICIANDO SESION
+********************************************
+1494859559: COMMAND <ifconfig >> .trazas-4/alumno-72106540E>
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::379e:253c:aecf:d78a  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:83:9e:50  txqueuelen 1000  (Ethernet)
+        RX packets 754  bytes 389382 (389.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 745  bytes 107320 (107.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 366  bytes 27228 (27.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 366  bytes 27228 (27.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+1494859582: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494859582: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1494859584: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1494859584: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <722>.
+********************************************[0m
+1494859584: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494859584: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859584: COMMAND <cp ./client.? .trazas-4>
+1494859584: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859584: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859606: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494859606: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859606: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494859606: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859606: COMMAND <cp ./client.? .trazas-4>
+1494859606: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859606: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859627: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494859627: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (2).
+
+-------------------------------------------------------
+1494859629: 
+-------------------------------------------------------
+<== Mensaje [<967>] (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859629: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <967>.
+********************************************[0m
+1494859629: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859629: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (3).
+
+-------------------------------------------------------
+1494859629: 
+-------------------------------------------------------
+<== Mensaje [<704>] (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859629: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <704>.
+********************************************[0m
+1494859629: 
+*************************************************
+:ok> Ejercicio 3 bien ejecutado.
+*************************************************
+1494859629: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859629: COMMAND <cp ./client.? .trazas-4>
+1494859629: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859629: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859648: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494859648: 
+-------------------------------------------------------
+==> Intentando conectar en 127.0.0.1:3001
+
+-------------------------------------------------------
+1494859648: 
+-------------------------------------------------------
+==> Conexión correcta en  127.0.0.1:3001
+
+-------------------------------------------------------
+1494859648: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <589>.
+********************************************[0m
+1494859648: 
+*************************************************
+:ok> Ejercicio 4 bien ejecutado.
+*************************************************
+1494859648: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859648: COMMAND <cp ./client.? .trazas-4>
+1494859648: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859648: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859673: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494859673: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <589>.
+********************************************[0m
+1494859673: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859673: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (5).
+
+-------------------------------------------------------
+1494859703: 
+-------------------------------------------------------
+<== Mensaje [<622>] (-1 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859703: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494859723: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 5.
+
+*************************************************
+
+
+1494859723: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <589>.
+********************************************[0m
+1494859723: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859723: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (5).
+
+-------------------------------------------------------
+1494859753: 
+-------------------------------------------------------
+<== Mensaje [<622>] (-1 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859753: 
+[5m*************************************************
+:nok> No se ha realizado correctamente el ejercicio 5.
+
+*************************************************[0m
+1494859763: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 1.
+
+*************************************************
+
+
+1494859763: 
+-------------------------------------------------------
+==> Esperando (30 seg) la conexión TCP (Puerto: 3000) en el proceso monitor.
+
+-------------------------------------------------------
+1494859765: 
+-------------------------------------------------------
+<== Recibida la conexión TCP desde 127.0.0.1 en el proceso monitor.
+
+-------------------------------------------------------
+1494859765: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <1> es <722>.
+********************************************[0m
+1494859765: 
+*************************************************
+:ok> Ejercicio 1 bien ejecutado.
+*************************************************
+1494859765: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859765: COMMAND <cp ./client.? .trazas-4>
+1494859765: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859765: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859785: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 2.
+
+*************************************************
+
+
+1494859785: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859785: 
+*************************************************
+:ok> Ejercicio 2 bien ejecutado.
+*************************************************
+1494859785: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859785: COMMAND <cp ./client.? .trazas-4>
+1494859785: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859785: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859804: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 3.
+
+*************************************************
+
+
+1494859804: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (2).
+
+-------------------------------------------------------
+1494859807: 
+-------------------------------------------------------
+<== Mensaje [<967>] (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859807: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <2> es <967>.
+********************************************[0m
+1494859807: 
+-------------------------------------------------------
+==> Mensaje (5 bytes) enviado al cliente en 127.0.0.1
+
+-------------------------------------------------------
+1494859807: 
+-------------------------------------------------------
+==> Esperando mensaje del apartado (3).
+
+-------------------------------------------------------
+1494859807: 
+-------------------------------------------------------
+<== Mensaje [<704>] (5 bytes) recibido desde 127.0.0.1
+
+-------------------------------------------------------
+1494859807: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <3> es <704>.
+********************************************[0m
+1494859807: 
+*************************************************
+:ok> Ejercicio 3 bien ejecutado.
+*************************************************
+1494859807: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859807: COMMAND <cp ./client.? .trazas-4>
+1494859807: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859807: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>
+1494859828: 
+
+
+*************************************************
+
+          EJECUTANDO EL EJERCICIO 4.
+
+*************************************************
+
+
+1494859828: 
+[5m********************************************
+:OK> RESPUESTA ADECUADA. El secreto <4> es <589>.
+********************************************[0m
+1494859828: 
+*************************************************
+:ok> Ejercicio 4 bien ejecutado.
+*************************************************
+1494859828: COMMAND <find . -type f -newer .alumno -print | awk -v pwd="`pwd`/.trazas-4" '{ if(index($0,pwd) != 1) print }' > /tmp/.asitmp>
+1494859828: COMMAND <cp ./client.? .trazas-4>
+1494859828: COMMAND <tar zcf save_file-72106540E .trazas-4 > /dev/null>
+1494859828: COMMAND <echo "\nopen u017633.ehu.es\nuser anonymous anonymous\npassive\ncd LAB1617/practica-4\nput save_file-72106540E 72106540E-15-5-16h45\n" | 	  ftp -n 2>&1 > /dev/null>

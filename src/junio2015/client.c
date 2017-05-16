@@ -121,6 +121,7 @@ int main(int argc, char** argv){
 							exit(0);
 						}
 						sprintf(pid,"%d\n",pd);
+						printf("%s\n",buffer);
 						if(strcmp("whoami",strtok(buffer,"\n"))==0){
 							send(fd,"anonymous\n",strlen("anonymous\n"),0);
 						}
